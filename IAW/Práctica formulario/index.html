@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="form.js"></script>
+	<noscript>"Tu navegador es obsoleto o no tiene Javascript activo."</noscript> 
+
+    <form id=formulario action="exito.html" onsubmit="return valida()">
+        <h2> Rellena tus datos: </h2> <br>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text"> <br>
+        <label for="apellidos">Apellidos: </label>
+        <input id="apellidos" type="text"> <br>
+        <label for="mail">Email: </label>
+        <input id="mail" type="text"> <br>
+
+        <label for="sexo">Sexo: <br>
+            <input type="radio" name="sexo" id="sexo" value="hombre"> Hombre
+            <input type="radio" name="sexo" id="sexo" value="mujer"> Mujer
+            <input type="radio" name="sexo" id="sexo" value="otros"> Otros  <br>
+        </label> <br>
+
+        <label for="mensaje">Escribe aquí tu mensaje</label>
+        <textarea name="mensaje" placeholder="...Mensaje aquí.."></textarea>
+
+        <input id="ad" type="checkbox">
+        <label for="ad">Deseo recibir publicidad en mi email</label> <br>
+
+        <label>Procedencia</label>
+        <select id="pais" name="pais">
+            <option value="">Selecciona país</option>
+            <option value="1">Andalucía</option>
+            <option value="2">Andorra</option>
+            <option value="3">Catalunya</option>
+            <option value="4">España</option>
+            <option value="5">Portugal</option>
+        </select>
+        <br> <br>
+        
+          <input id="envia" type="submit" value="Enviar"> 
+          <input id="borra" type="reset" value="Borrar datos">
+    </form>
+    
+</body>
+</html>

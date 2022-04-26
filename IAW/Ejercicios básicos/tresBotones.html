@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <form name="formulario">
+        <input id="boton1" type="button" value="Primer botón" onclick="alert('Has pulsado el primer botón')">
+        <input id="boton2" type="button" value="Segundo botón" onclick="alert('Has pulsado el segundo botón')"> 
+        <input id="boton3" type="button" value="Tercer botón" onclick="alert('Has pulsado el tercer botón')"> 
+    </form>
+
+    <script>
+        const sonIguales = () => {
+            if (document.getElementById('pass1').value == document.getElementById('pass2').value) {
+                document.write("Registro correcto.");
+            } else {
+                alert("Contraseñas diferentes.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+

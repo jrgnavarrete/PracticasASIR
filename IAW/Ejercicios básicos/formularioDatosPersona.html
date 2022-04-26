@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <form name="formulario">
+        Introduce nombre: <input id="nombre" type="text"> <br> <br>
+        Introduce apellido: <input id="apellido" type="text"> <br> <br>
+        Introduce edad: <input id="edad" type="text"> <br> <br>
+        <input id="boton" type="button" value="Enviar" onclick="muestraDatos()" > 
+    </form>
+
+    <script>
+        const muestraDatos = () => {
+            let newEdad = Number(document.getElementById('edad').value);
+            if (isNaN(newEdad) || Number(newEdad) < 1 || Number(newEdad) > 130) {
+                alert("No has introducido una edad correcta.")
+            } else {
+                document.write(`Has introducido que ${document.getElementById('nombre').value} ${document.getElementById('apellido').value}
+                tiene ${newEdad} años.`)
+            }
+        }
+    </script>
+
+</body>
+</html>
+
